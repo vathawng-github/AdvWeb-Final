@@ -1,0 +1,214 @@
+@import "var.less";
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    padding: 30px;
+    border: 1px solid lightgray;
+}
+
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.left > * {
+    margin: 10px;
+}
+
+
+.nav {
+    display: inline-flex;
+    font-weight: 700;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav li:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        display: none;
+    }
+    /* .navbar-toggler[aria-expanded="true"]  {
+        margin: 0 auto;
+    } */
+
+    .center {
+        justify-content: space-between;
+    }
+}
+
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 3rem 0 0 0;
+}
+
+.landing img {
+    margin-top: 5rem;
+    width: 70vw;
+    height: 70vh;
+}
+
+.buttons > * {
+    margin: 5rem;
+}
+
+#presidents, #states, #submit, #next-btn {
+    background-color: @MtVernon-yellow;
+    color: white;
+    border: none;
+    width: @button-width;
+    height: @button-height;
+    border-radius: 25px;
+    transition: transform .2s;
+    margin-top: 5px;
+}
+
+#next-btn {
+    display: block;
+    float: right;
+}
+
+#presidents:hover, #states:hover, #submit:hover, #next-btn:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: @card-margin-top @card-margin-sides;
+    box-shadow: 0px 5px 10px 5px @MtVernon-yellow;
+    transition: transform .2s;
+    height: 70vh;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.quiz-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.states-landing {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.states-landing img {
+    margin: 5rem 0;
+    width: 70vw;
+    height: 70vh;
+}
+
+.card-img-top {
+    height: @card-img-height;
+}
+
+.quiz-landing {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question-block {
+    width: 80%;
+    height: 55vh;
+    margin: 50px auto;
+    box-shadow: 0px 5px 10px 5px @MtVernon-yellow;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color:#fff;
+}
+
+.btn[disabled]{
+    cursor: no-drop;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+

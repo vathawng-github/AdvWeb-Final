@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US-tory</title>
+    <!-- Import Bootstrap -->
+    <link 
+        href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-
+        EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous" 
+    />
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Import Less -->
+    <link rel = "stylesheet/less" type = "text/css" href = "../less/styles.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!-- More Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-
+        MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script src = "enabler.js" defer></script>
+    <script src = "../js/statesquiz.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+          <img src = "../assets/usaflag.png" id = "logo" alt = "usa flag" />
+          <a class="navbar-brand" href="/index.html">US-tory</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./presidents.html">Presidents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./states.html">States</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col quiz-landing">
+                <h1>States Quiz!</h1>
+                <p>Test your knowledge on the States of the United States.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "container-fluid question-container">
+        <div class = "row">
+            <div class = "col">
+                <div class = "question-block">
+                    <!-- <h5>Quiz</h5> -->
+                    <h5 id = "question">Which state has the biggest population?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                    <button id = "next-btn">Next</button>
+                </div>
+                <!-- <div class = "question-block">
+                    <h5 id = "question">Question 2</h5>
+                    <h5>What is the capital city of California?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 3</h5>
+                    <h5>Which state has the smallest land mass?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 4</h5>
+                    <h5>What state is the Grand Canyon located in?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 5</h5>
+                    <h5>What state has the smallest population?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 6</h5>
+                    <h5>What state is Yellowstone National Park located in?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 7</h5>
+                    <h5>What state can you shop at the Mall of America in?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 8</h5>
+                    <h5>What state has the largest land mass?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 9</h5>
+                    <h5>What state has the capital city of Helena?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 10</h5>
+                    <h5>What state can you find Times Square in?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <button type = "submit" id = "submit">Submit</button> -->
+            </div>
+        </div>
+    </div>
+</body>

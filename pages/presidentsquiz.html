@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US-tory</title>
+    <!-- Import Bootstrap -->
+    <link 
+        href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-
+        EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous" 
+    />
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Import Less -->
+    <link rel = "stylesheet/less" type = "text/css" href = "../less/styles.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!-- More Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-
+        MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script src = "enabler.js" defer></script>
+    <script src = "../js/presidentsquiz.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+          <img src = "../assets/usaflag.png" id = "logo" alt = "usa flag" />
+          <a class="navbar-brand" href="/index.html">US-tory</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./presidents.html">Presidents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./states.html">States</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col quiz-landing">
+                <h1>Presidents Quiz!</h1>
+                <p>Test your knowledge on the Presidents of the United States.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "container-fluid question-container">
+        <div class = "row">
+            <div class = "col">
+                <div class = "question-block">
+                    <!-- <h5>Quiz</h5> -->
+                    <h5 id = "question">Who was the first American Born President?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div> 
+                    <button id = "next-btn">Next</button>
+                </div>
+                <!-- <div class = "question-block">
+                    <h5 id = "question">Question 2</h5>
+                    <h5>Which president made Mother's Day a holiday?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                    
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 3</h5>
+                    <h5>Who was the only president to serve non-consecutive terms?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                   
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 4</h5>
+                    <h5>Which president is distantly related to 11 other presidents?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 5</h5>
+                    <h5>Which president turned down offers to play NFL football?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 6</h5>
+                    <h5>Who is the tallest president?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 7</h5>
+                    <h5>Who is the shortest president?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 8</h5>
+                    <h5>Which president was the first to have a telephone in the White House?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 9</h5>
+                    <h5>Which president was the first to ride a helicopter?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div>
+                <div class = "question-block">
+                    <h5 id = "question">Question 10</h5>
+                    <h5>Which president was the first to throw the first ceremonial pitch at an MLB game?</h5>
+                    <div id = "answer-buttons">
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                        <button class = "btn">Answer 1</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>

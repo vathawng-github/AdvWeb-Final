@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US-tory</title>
+    <!-- Import Bootstrap -->
+    <link 
+        href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-
+        EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous" 
+    />
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Import Less -->
+    <link rel = "stylesheet/less" type = "text/css" href = "../less/styles.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!-- More Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-
+        MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script src = "enabler.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+          <img src = "../assets/usaflag.png" id = "logo" alt = "usa flag" />
+          <a class="navbar-brand" href="../index.html">US-tory</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/presidents.html">Presidents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./states.html">States</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col quiz-section">
+                <h1>Test your Knowledge!</h1>
+                <p>Read about the presidents of the United States then, test yourself.</p>
+                <button id = "presidents">
+                    <a href = "presidentsquiz.html">Take Quiz</a>
+                </button>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col card-container">
+                <!-- Using Bootstrap Cards to present all 46 presidents -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/georgewashington.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">George Washington</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Feb. 22, 1732 - Dec. 14, 1799)</p>
+                      <p class = "card-text">Vice President: John Adams</p>
+                      <p class = "card-text">Party: Federalist</p>
+                      <p class = "card-text">Fun Fact: Chopped down his father's cherry tree.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/johnadams.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">John Adams</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Oct. 30, 1735 - Jul., 1826)</p>
+                      <p class = "card-text">Vice President: Thomas Jefferson</p>
+                      <p class = "card-text">Party: Federalist</p>
+                      <p class = "card-text">Fun Fact: Nicknamed the "Father of American Independence".</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/thomasjefferson.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Thomas Jefferson</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Apr. 13, 1743 - Jul. 4, 1826)</p>
+                      <p class = "card-text">Vice President: Aaron Burr</p>
+                      <p class = "card-text">Party: Democratic-Republican</p>
+                      <p class = "card-text">Fun Fact: Died only a few hours after "frenemy" John Adams.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/jamesmadison.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">James Madison</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Mar. 16, 1751 - Jun 28, 1836)</p>
+                      <p class = "card-text">Vice President: Elbridge Gerry</p>
+                      <p class = "card-text">Party: Democratic-Republican</p>
+                      <p class = "card-text">Fun Fact: The shortest president at 5'4".</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/jamesmonroe.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">James Monroe</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Apr. 28, 1758 - Jul. 4, 1831)</p>
+                      <p class = "card-text">Vice President: Daniel D. Tompkins</p>
+                      <p class = "card-text">Party: Democratic-Republican</p>
+                      <p class = "card-text">Fun Fact: Only other president to run unopposed, other than Washington.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/johnquincy.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">John Quincy Adams</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Jul. 11, 1767 - Feb. 23, 1848)</p>
+                      <p class = "card-text">Vice President: John C. Calhoun</p>
+                      <p class = "card-text">Party: Democratic-Republican</p>
+                      <p class = "card-text">Fun Fact: Freed captive slaves that rebelled aboard the Amistad slave ship.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/andrewjackson.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Andrew Jackson</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Mar. 15, 1767 - Jun. 8, 1845)</p>
+                      <p class = "card-text">Vice President: Martin Van Buren</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Once killed a man in a duel.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/martinvan.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Martin Van Buren</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Dec. 5, 1782 - Jul. 24, 1862)</p>
+                      <p class = "card-text">Vice President: Richard Johnson</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: The first president to be born American.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/williamharrison.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">William Harrison</h5>
+                      <p class = "card-text">Years of Presidency: 32 days</p>
+                      <p class = "card-text">(Feb. 9, 1773 - Apr. 4, 1841)</p>
+                      <p class = "card-text">Vice President: John Tyler</p>
+                      <p class = "card-text">Party: Whig</p>
+                      <p class = "card-text">Fun Fact: Lasted only 32 days in office.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/johntyler.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">John Tyler</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Mar. 29, 1790 - Jan. 18, 1862)</p>
+                      <p class = "card-text">Vice President: None</p>
+                      <p class = "card-text">Party: Whig</p>
+                      <p class = "card-text">Fun Fact: Fathered 15 children.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/jamespolk.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">James Polk</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Nov. 2, 1795 - Jun 15, 1849)</p>
+                      <p class = "card-text">Vice President: George Dallas</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Secretly purchased enslaved children for his cotton plantation.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/zacharytaylor.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Zachary Taylor</h5>
+                      <p class = "card-text">Years of Presidency: 1</p>
+                      <p class = "card-text">(Nov. 24, 1784 - Jul, 9, 1850)</p>
+                      <p class = "card-text">Vice President: Millard Fillmore</p>
+                      <p class = "card-text">Party: Whig</p>
+                      <p class = "card-text">Fun Fact: Never voted in an election prior to his campaign.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/millardfillmore.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Millard Fillmore</h5>
+                      <p class = "card-text">Years of Presidency: 3</p>
+                      <p class = "card-text">(Jan. 7, 1800 - Mar. 8, 1874)</p>
+                      <p class = "card-text">Vice President: None</p>
+                      <p class = "card-text">Party: Whig</p>
+                      <p class = "card-text">Fun Fact: The last Whip President.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/franklinpierce.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Franklin Pierce</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Nov. 23, 1804 - Oct. 8, 1869)</p>
+                      <p class = "card-text">Vice President: William King</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: The only president from New Hampshire.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/jamesbuchanan.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">James Buchanan</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Apr. 23, 1791 - Jul. 1, 1868)</p>
+                      <p class = "card-text">Vice President: John Breckinridge</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Served as a minister to Great Britain before being in office.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/abrahamlincoln.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Abraham Lincoln</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Feb. 12, 1809 - Apr. 15, 1865)</p>
+                      <p class = "card-text">Vice President: Hannibal Hamlin, Andrew Johnson</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: The tallest president at 6'4".</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/andrewjohnson.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Andrew Johnson</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Dec. 29, 1808 - Jul. 31, 1835)</p>
+                      <p class = "card-text">Vice President: None</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Cared for a family of White House mice called "little fellows".</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/ulyssesgrant.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Ulysses Grant</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Apr. 27, 1822 - Jul. 23, 1885)</p>
+                      <p class = "card-text">Vice President: Schuyler Colfax, Henry Wilson</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Declined to join Abraham Lincoln at Ford's Theatre due to family plan.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/rutherfordhayes.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Rutherford Hayes</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Oct. 4, 1822 - Jul. 23, 1885)</p>
+                      <p class = "card-text">Vice President: William Wheeler</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: The first president to have a telephone in the White House.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/jamesgarfield.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">James Garfield</h5>
+                      <p class = "card-text">Years of Presidency: 1</p>
+                      <p class = "card-text">(Nov. 19, 1831 - Sep. 19, 1881)</p>
+                      <p class = "card-text">Vice President: Chester Arthur</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: The first known left-handed president.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/chesterarthur.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Chester Arthur</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Oct. 5, 1829 - Nov. 18, 1886)</p>
+                      <p class = "card-text">Vice President: None</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Named after the doctor that delivered him.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/grovercleveland.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Grover Cleveland</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Mar. 18, 1837 - Jun. 24, 1908)</p>
+                      <p class = "card-text">Vice President: Thomas Hendricks, Adlai Stevenson</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: The only president to serve non-consecutive terms.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/benjaminharrison.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Benjamin Harrison</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Aug. 20, 1833 - Mar. 13, 1901)</p>
+                      <p class = "card-text">Vice President: Levi Morton</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: The first president to hire a female staffer.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/williammckinley.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">William McKinley</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Jan. 29, 1843 - Spe. 14, 1901)</p>
+                      <p class = "card-text">Vice President: Garret Hobart, Theodore Roosevelt</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Appeared on the $500 bill.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/theodoreroosevelt.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Theodore Roosevelt</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Oct. 27, 1858 - Jan. 6, 1919)</p>
+                      <p class = "card-text">Vice President: Charles Fairbanks</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: The youngest president, taking office at 42.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/williamtaft.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">William Taft</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Sep. 15, 1857 - Mar. 8, 1930)</p>
+                      <p class = "card-text">Vice President: James Sherman</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: The first president to hurl the first pitch at a MLB game.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/woodrowwilson.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Woodrow Wilson</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Dec. 28, 1856 - Feb. 3, 1924)</p>
+                      <p class = "card-text">Vice President: Thomas Marshall</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Established the second Sunday of May as Mother's Day.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/warrenharding.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Warren Harding</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Nov. 2, 1865 - Aug. 2, 1923)</p>
+                      <p class = "card-text">Vice President: Calvin Collidge</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Wrote a series of love letters to one of his friend's wife.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/calvincollidge.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Calvin Collidge</h5>
+                      <p class = "card-text">Years of Presidency: 6</p>
+                      <p class = "card-text">(Jul. 4, 1872 - Jan. 5, 1933)</p>
+                      <p class = "card-text">Vice President: Charles Dawes</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Replied, "You lose." to a visitor who bet she could get three words out of him.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/herberthoover.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Herbert Hoover</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Aug. 10, 1874 - Oct. 20, 1964)</p>
+                      <p class = "card-text">Vice President: Charles Curtis</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: First president to be from west of the Mississippi River.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/franklinroosevelt.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Franklin Roosevelt</h5>
+                      <p class = "card-text">Years of Presidency: 12</p>
+                      <p class = "card-text">(Jan. 30, 1882 - Apr. 12, 1945)</p>
+                      <p class = "card-text">Vice President: John Garner, Henry Wallace, Harry Truman</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Distantly related to 11 other presidents.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/harrytruman.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Harry S. Truman</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(May. 8, 1884 - Dec. 26, 1972)</p>
+                      <p class = "card-text">Vice President: Alben Barkley</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: His middle initial "S" didn't stand for anything.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/dwighteisenhower.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Dwight Eisenhower</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Oct. 14, 1890 - Mar. 28, 1969)</p>
+                      <p class = "card-text">Vice President: Richard Nixon</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: The first president to ride a helicopter.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/johnkennedy.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">John F. Kennedy</h5>
+                      <p class = "card-text">Years of Presidency: 2</p>
+                      <p class = "card-text">(May. 29, 1917 - Nov. 22, 1963)</p>
+                      <p class = "card-text">Vice President: Lyndon Johnson</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Honorably discharged from WWII.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/lyndonjohnson.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Lyndon Johnson</h5>
+                      <p class = "card-text">Years of Presidency: 6</p>
+                      <p class = "card-text">(Aug. 27, 1908 - Jan. 22, 1973)</p>
+                      <p class = "card-text">Vice President: Hubert Humphrey</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Worked as a teacher prior to being in office.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/richardnixon.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Richard Nixon</h5>
+                      <p class = "card-text">Years of Presidency: 5</p>
+                      <p class = "card-text">(Jan. 9, 1913 - Apr. 22, 1994)</p>
+                      <p class = "card-text">Vice President: Spiro Agnew, Gerald Ford</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: His poker winnings helped him launch his political career.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/geraldford.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Gerald Ford</h5>
+                      <p class = "card-text">Years of Presidency: 3</p>
+                      <p class = "card-text">(Jul. 14, 1913 - Dec. 26, 2006)</p>
+                      <p class = "card-text">Vice President: Nelson Rockefeller</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Rejected football contracts from the Detroit Lions and Green Bay Packers.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/jamescarter.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Jimmy Carter</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Oct. 1, 1924 - Present)</p>
+                      <p class = "card-text">Vice President: Walter Mondale</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Gave up his military career to work on their family's peanut farm</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/ronaldregan.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Ronald Reagan</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Feb. 6, 1911 - Jun 5, 2004)</p>
+                      <p class = "card-text">Vice President: George Bush</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Also worked as an actor, lifeguard, and sportscaster.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/georgebush.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">George Bush</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Jun. 12, 1924 - Nov. 18, 2018)</p>
+                      <p class = "card-text">Vice President: Dan Quayle</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: A member of the Skull and Bones, an elite secret student society.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/billclinton.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Bill Clinton</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Aug. 19, 1946 - Present)</p>
+                      <p class = "card-text">Vice President: Al Gore</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Played the saxophone and performed on the Arsenio Hall Show.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/georgewbush.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">George W. Bush</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Jul. 6, 1946 - Present)</p>
+                      <p class = "card-text">Vice President: Dick Cheney</p>
+                      <p class = "card-text">Party: Republican</p>
+                      <p class = "card-text">Fun Fact: Has artwork in the Museum of Southwest in Texas.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/barackobama.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Barack Obama</h5>
+                      <p class = "card-text">Years of Presidency: 8</p>
+                      <p class = "card-text">(Aug. 4, 1961 - Present)</p>
+                      <p class = "card-text">Vice President: Joe Biden</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: The first African American President.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/donaldtrump.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Donald Trump</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Jun. 14, 1946 - Present)</p>
+                      <p class = "card-text">Vice President: Mike Pence</p>
+                      <p class = "card-text">Party: Republic</p>
+                      <p class = "card-text">Fun Fact: Host of the NBC reality show, "The Apprentice".</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/presidents/joebiden.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Joe Biden</h5>
+                      <p class = "card-text">Years of Presidency: 4</p>
+                      <p class = "card-text">(Nov. 20, 1942 - Present)</p>
+                      <p class = "card-text">Vice President: Kamala Harris</p>
+                      <p class = "card-text">Party: Democratic</p>
+                      <p class = "card-text">Fun Fact: Overcame a debilitating childhood stutter after being bullied.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

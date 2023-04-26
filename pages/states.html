@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US-tory</title>
+    <!-- Import Bootstrap -->
+    <link 
+        href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-
+        EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous" 
+    />
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Import Less -->
+    <link rel = "stylesheet/less" type = "text/css" href = "../less/styles.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!-- More Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-
+        MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script src = "enabler.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+          <img src = "../assets/usaflag.png" id = "logo" alt = "usa flag" />
+          <a class="navbar-brand" href="/index.html">US-tory</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./presidents.html">Presidents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/states.html">States</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col quiz-section">
+                <h1>Test your Knowledge!</h1>
+                <p>Read about the states of the United States then, test yourself.</p>
+                <button id = "states">
+                    <a href = "statesquiz.html">Take Quiz</a>
+                </button>
+            </div>
+        </div>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-11 states-landing">
+                <img src = "../assets/states/statemap.png" alt = "state map" />
+            </div>
+        </div>
+    </div>
+    <div class = "container-fluid">
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col card-container">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/alabama.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Alabama</h5>
+                          <p class = "card-text">Land Mass: 52,420 sq. mi.</p>
+                          <p class = "card-text">Capital: Montgomery</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: US Space & Rocket Center</p>
+                          <p class = "card-text">Population: 5,074,296</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/alaska.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Alaska</h5>
+                          <p class = "card-text">Land Mass: 665,384 sq. mi</p>
+                          <p class = "card-text">Capital: Juneau</p>
+                          <p class = "card-text">Major Industry: Mining</p>
+                          <p class = "card-text">Major Attraction: Denali National Park</p>
+                          <p class = "card-text">Population: 733,583</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/arizona.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Arizona</h5>
+                          <p class = "card-text">Land Mass: 113,990 sq. mi.</p>
+                          <p class = "card-text">Capital: Phoenix</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Grand Canyon National Park</p>
+                          <p class = "card-text">Population: 7,359,197</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/arkansas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Arkansas</h5>
+                          <p class = "card-text">Land Mass: 53,178 sq. mi.</p>
+                          <p class = "card-text">Capital: Little Rock</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Hot Springs National Park</p>
+                          <p class = "card-text">Population: 3,045,637</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/california.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">California</h5>
+                          <p class = "card-text">Land Mass: 163,694 sq. mi</p>
+                          <p class = "card-text">Capital: Sacramento</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Disneyland Park</p>
+                          <p class = "card-text">Population: 39,029,342</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/colorado.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Colorado</h5>
+                          <p class = "card-text">Land Mass: 104,098 sq. mi.</p>
+                          <p class = "card-text">Capital: Denver</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Rocky Mountain National Park</p>
+                          <p class = "card-text">Population: 5,839,926</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/connecticut.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Connecticut</h5>
+                          <p class = "card-text">Land Mass: 5,543 sq. mi.</p>
+                          <p class = "card-text">Capital: Hartford</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Mystic Seaport Museum</p>
+                          <p class = "card-text">Population: 3,626,205</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/delware.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Delaware</h5>
+                          <p class = "card-text">Land Mass: 2,488 sq. mi.</p>
+                          <p class = "card-text">Capital: Dover</p>
+                          <p class = "card-text">Major Industry: Finance</p>
+                          <p class = "card-text">Major Attraction: Rehoboth Boardwalk</p>
+                          <p class = "card-text">Population: 1,018,396</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/florida.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Florida</h5>
+                          <p class = "card-text">Land Mass: 65,757 sq. mi.</p>
+                          <p class = "card-text">Capital: Tallahassee</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Magic Kingdom at Disneyworld</p>
+                          <p class = "card-text">Population: 22,244,823</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/georgia.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Georgia</h5>
+                          <p class = "card-text">Land Mass: 59,425 sq. mi.</p>
+                          <p class = "card-text">Capital: Atlanta</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Georgia Aquarium</p>
+                          <p class = "card-text">Population: 10,912,876</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/hawaii.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Hawaii</h5>
+                          <p class = "card-text">Land Mass: 10,931 sq. mi.</p>
+                          <p class = "card-text">Capital: Honolulu</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Pearl Harbor</p>
+                          <p class = "card-text">Population: 1,440,196</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/idaho.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Idaho</h5>
+                          <p class = "card-text">Land Mass: 84,568 sq. mi.</p>
+                          <p class = "card-text">Capital: Boise</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Craters of the Moon National Monument</p>
+                          <p class = "card-text">Population: 1,939,033</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/illinois.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Illinois</h5>
+                          <p class = "card-text">Land Mass: 57, 913 sq. mi.</p>
+                          <p class = "card-text">Capital: Springfield</p>
+                          <p class = "card-text">Major Industry: Professional and Business Services</p>
+                          <p class = "card-text">Major Attraction: Millennium Park</p>
+                          <p class = "card-text">Population: 12,582,032</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/indiana.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Indiana</h5>
+                          <p class = "card-text">Land Mass: 36, 419 sq. mi</p>
+                          <p class = "card-text">Capital: Indianapolis</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Indiana Dunes National Park</p>
+                          <p class = "card-text">Population: 6,833,037</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/iowa.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iowa</h5>
+                          <p class = "card-text">Land Mass: 56, 272 sq. mi</p>
+                          <p class = "card-text">Capital: Des Moines</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Field of Dreams</p>
+                          <p class = "card-text">Population: 3,200,517</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/kansas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Kansas</h5>
+                          <p class = "card-text">Land Mass: 82, 278 sq. mi</p>
+                          <p class = "card-text">Capital: Topeka</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Sedgwick County Zoo</p>
+                          <p class = "card-text">Population: 2,937,150</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/kentucky.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Kentucky</h5>
+                          <p class = "card-text">Land Mass: 40,407 sq. mi.</p>
+                          <p class = "card-text">Capital: Frankfort</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Cumberland Falls State Park</p>
+                          <p class = "card-text">Population: 4,512,310</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/louisiana.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Louisiana</h5>
+                          <p class = "card-text">Land Mass: 52,378 sq. mi.</p>
+                          <p class = "card-text">Capital: Baton Rouge</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: French Quarter</p>
+                          <p class = "card-text">Population: 4,590,241</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/maine.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Maine</h5>
+                          <p class = "card-text">Land Mass: 35,379 sq. mi.</p>
+                          <p class = "card-text">Capital: Augusta</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Acadia National Park</p>
+                          <p class = "card-text">Population: 1,385,340</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/maryland.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Maryland</h5>
+                          <p class = "card-text">Land Mass: 12,405 sq. mi.</p>
+                          <p class = "card-text">Capital: Annapolis</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: National Aquarium</p>
+                          <p class = "card-text">Population: 6,164,660</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/massachusetts.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Massachusetts</h5>
+                          <p class = "card-text">Land Mass: 10,554 sq. mi.</p>
+                          <p class = "card-text">Capital: Boston</p>
+                          <p class = "card-text">Major Industry: Professional and Business Services</p>
+                          <p class = "card-text">Major Attraction: Faneuil Hall Marketplace</p>
+                          <p class = "card-text">Population: 6,981,974</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/michigan.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Michigan</h5>
+                          <p class = "card-text">Land Mass: 96,713 sq. mi.</p>
+                          <p class = "card-text">Capital: Lansing</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: The Henry Ford Museum</p>
+                          <p class = "card-text">Population: 10,034,113</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/minnesota.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Minnesota</h5>
+                          <p class = "card-text">Land Mass: 86,935 sq. mi.</p>
+                          <p class = "card-text">Capital: Saint Paul</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Mall of America</p>
+                          <p class = "card-text">Population: 5,717,184</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/mississippi.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Mississippi</h5>
+                          <p class = "card-text">Land Mass: 48,431 sq. mi.</p>
+                          <p class = "card-text">Capital: Jackson</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Vicksburg National Military Park</p>
+                          <p class = "card-text">Population: 2,940,057</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/missouri.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Missouri</h5>
+                          <p class = "card-text">Land Mass: 69,706 sq. mi.</p>
+                          <p class = "card-text">Capital: Jefferson City</p>
+                          <p class = "card-text">Major Industry: Professional and Business Services</p>
+                          <p class = "card-text">Major Attraction: Gateway Arch</p>
+                          <p class = "card-text">Population: 6,177,957</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/montana.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Montana</h5>
+                          <p class = "card-text">Land Mass: 147,039 sq. mi.</p>
+                          <p class = "card-text">Capital: Helena</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Glacier National Park</p>
+                          <p class = "card-text">Population: 1,122,867</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/nebraska.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Nebraska</h5>
+                          <p class = "card-text">Land Mass: 77,347 sq. mi.</p>
+                          <p class = "card-text">Capital: Lincoln</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Henry Doorly Zoo and Aquarium</p>
+                          <p class = "card-text">Population: 1,967,923</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/nevada.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Nevada</h5>
+                          <p class = "card-text">Land Mass: 110,571 sq. mi.</p>
+                          <p class = "card-text">Capital: Carson City</p>
+                          <p class = "card-text">Major Industry: Arts & Entertainment</p>
+                          <p class = "card-text">Major Attraction: Las Vegas Strip</p>
+                          <p class = "card-text">Population: 3,177,772</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/newhampshire.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">New Hampshire</h5>
+                          <p class = "card-text">Land Mass: 9,349 sq. mi.</p>
+                          <p class = "card-text">Capital: Concord</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Kancamagus Highway</p>
+                          <p class = "card-text">Population: 1,395,231</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/newjersey.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">New Jersey</h5>
+                          <p class = "card-text">Land Mass: 8,722 sq. mi.</p>
+                          <p class = "card-text">Capital: Trenton</p>
+                          <p class = "card-text">Major Industry: Professional and Business Services</p>
+                          <p class = "card-text">Major Attraction: Atlantic City Boardwalk</p>
+                          <p class = "card-text">Population: 9,261,699</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/newmexico.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">New Mexico</h5>
+                          <p class = "card-text">Land Mass: 121,590 sq. mi.</p>
+                          <p class = "card-text">Capital: Santa Fe</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: White Sands National Park</p>
+                          <p class = "card-text">Population: 2,113,344</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/newyork.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">New York</h5>
+                          <p class = "card-text">Land Mass: 54,554 sq. mi.</p>
+                          <p class = "card-text">Capital: Albany</p>
+                          <p class = "card-text">Major Industry: Finance</p>
+                          <p class = "card-text">Major Attraction: Times Square</p>
+                          <p class = "card-text">Population: 19,677,151</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/northcarolina.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">North Carolina</h5>
+                          <p class = "card-text">Land Mass: 53,819 sq. mi.</p>
+                          <p class = "card-text">Capital: Raleigh</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Biltmore Estate</p>
+                          <p class = "card-text">Population: 10,698,973</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/northdakota.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">North Dakota</h5>
+                          <p class = "card-text">Land Mass: 70,698 sq. mi.</p>
+                          <p class = "card-text">Capital: Bismarck</p>
+                          <p class = "card-text">Major Industry: Mining</p>
+                          <p class = "card-text">Major Attraction: Theodore Roosevelt National Park</p>
+                          <p class = "card-text">Population: 779,261</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/ohio.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Ohio</h5>
+                          <p class = "card-text">Land Mass: 44,825 sq. mi.</p>
+                          <p class = "card-text">Capital: Columbus</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Rock & Roll Hall of Fame</p>
+                          <p class = "card-text">Population: 11,756,058</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/oklahoma.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Oklahoma</h5>
+                          <p class = "card-text">Land Mass: 69,898 sq. mi.</p>
+                          <p class = "card-text">Capital: Oklahoma City</p>
+                          <p class = "card-text">Major Industry: Mining</p>
+                          <p class = "card-text">Major Attraction: National Cowboy and Western Heritage Museum</p>
+                          <p class = "card-text">Population: 4,019,800</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/oregon.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Oregon</h5>
+                          <p class = "card-text">Land Mass: 98,378 sq. mi.</p>
+                          <p class = "card-text">Capital: Salem</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Multnomah Falls</p>
+                          <p class = "card-text">Population: 4,240,137</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/pennsylvania.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Pennsylvania</h5>
+                          <p class = "card-text">Land Mass: 46,054 sq. mi.</p>
+                          <p class = "card-text">Capital: Harrisburg</p>
+                          <p class = "card-text">Major Industry: Professional and Business Services</p>
+                          <p class = "card-text">Major Attraction: Independence National Historic Park</p>
+                          <p class = "card-text">Population: 12,972,008</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/rhodeisland.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Rhode Island</h5>
+                          <p class = "card-text">Land Mass: 1,544 sq. mi.</p>
+                          <p class = "card-text">Capital: Providence</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Newport Mansions</p>
+                          <p class = "card-text">Population: 1,093,734</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/southcarolina.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">South Carolina</h5>
+                          <p class = "card-text">Land Mass: 32,020 sq. mi.</p>
+                          <p class = "card-text">Capital: Columbia</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Ripley's Aquarium</p>
+                          <p class = "card-text">Population: 5,282,634</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/southdakota.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">South Dakota</h5>
+                          <p class = "card-text">Land Mass: 77,115 sq. mi.</p>
+                          <p class = "card-text">Capital: Pierre</p>
+                          <p class = "card-text">Major Industry: Finance</p>
+                          <p class = "card-text">Major Attraction: Mount Rushmore</p>
+                          <p class = "card-text">Population: 909,824</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/tennesse.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Tennessee</h5>
+                          <p class = "card-text">Land Mass: 42,144 sq. mi.</p>
+                          <p class = "card-text">Capital: Nashville</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Graceland</p>
+                          <p class = "card-text">Population: 7,051,339</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/texas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Texas</h5>
+                          <p class = "card-text">Land Mass: 268,596 sq. mi.</p>
+                          <p class = "card-text">Capital: Austin</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: San Antonio River Walk</p>
+                          <p class = "card-text">Population: 30,029,572</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/utah.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Utah</h5>
+                          <p class = "card-text">Land Mass: 84,896 sq. mi.</p>
+                          <p class = "card-text">Capital: Salt Lake City</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Temple Square</p>
+                          <p class = "card-text">Population: 3,380,800</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/vermont.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Vermont</h5>
+                          <p class = "card-text">Land Mass: 9,616 sq. mi.</p>
+                          <p class = "card-text">Capital: Montpelier</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Ben & Jerry's Factory</p>
+                          <p class = "card-text">Population: 647,064</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/virginiaabama.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Virginia</h5>
+                          <p class = "card-text">Land Mass: 42,774 sq. mi.</p>
+                          <p class = "card-text">Capital: Richmond</p>
+                          <p class = "card-text">Major Industry: Professional and Business Services</p>
+                          <p class = "card-text">Major Attraction: Colonial Williamsburg</p>
+                          <p class = "card-text">Population: 8,683,619</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/washington.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Washington</h5>
+                          <p class = "card-text">Land Mass: 71,297 sq. mi.</p>
+                          <p class = "card-text">Capital: Olympia</p>
+                          <p class = "card-text">Major Industry: Real Estate</p>
+                          <p class = "card-text">Major Attraction: Pike Place Market</p>
+                          <p class = "card-text">Population: 7,785,786</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/westvirginia.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">West Virginia</h5>
+                          <p class = "card-text">Land Mass: 24,230 sq. mi.</p>
+                          <p class = "card-text">Capital: Charleston</p>
+                          <p class = "card-text">Major Industry: Educational Services</p>
+                          <p class = "card-text">Major Attraction: Harpers Ferry National Historic Park</p>
+                          <p class = "card-text">Population: 1,775,156</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/wisconson.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Wisconsin</h5>
+                          <p class = "card-text">Land Mass: 65,496 sq. mi.</p>
+                          <p class = "card-text">Capital: Madison</p>
+                          <p class = "card-text">Major Industry: Manufacturing</p>
+                          <p class = "card-text">Major Attraction: Wisconsin Dells</p>
+                          <p class = "card-text">Population: 5,892,539</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/states/wyoming.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Wyoming</h5>
+                          <p class = "card-text">Land Mass: 97,813 sq. mi.</p>
+                          <p class = "card-text">Capital: Cheyenne</p>
+                          <p class = "card-text">Major Industry: Mining</p>
+                          <p class = "card-text">Major Attraction: Yellowstone National Park</p>
+                          <p class = "card-text">Population: 581,381</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
